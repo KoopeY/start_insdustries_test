@@ -14,7 +14,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme"
+        android:theme="@android:style/Theme.Holo.Light"
         android:name=".UserSpottingApplication">
         <activity
             android:name=".UserListActivity"
@@ -24,14 +24,20 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="android.app.Activity" />
         </activity>
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:parentActivityName=".UserListActivity"
+            android:name=".UserDescription"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.Light">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UserListActivity" />
         </activity>
     </application>
 
