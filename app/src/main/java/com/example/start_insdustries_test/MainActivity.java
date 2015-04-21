@@ -1,19 +1,22 @@
 package com.example.start_insdustries_test;
 
+import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.parse.ParseObject;
 
-public class MainActivity extends ActionBarActivity {
+
+public class MainActivity extends Activity {
 
     private User user;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        ParseObject.registerSubclass(User.class);
         user = new User();
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
