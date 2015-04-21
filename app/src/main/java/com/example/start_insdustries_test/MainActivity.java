@@ -1,5 +1,7 @@
 package com.example.start_insdustries_test;
 
+import android.app.Fragment;
+import android.app.FragmentManager;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Window;
@@ -20,14 +22,14 @@ public class MainActivity extends ActionBarActivity {
         // Begin with main data entry view,
         // NewUserFragment
         setContentView(R.layout.activity_main);
-        /*FragmentManager manager = getFragmentManager();
+        FragmentManager manager = getFragmentManager();
         Fragment fragment = manager.findFragmentById(R.id.fragmentContainer);
 
         if (fragment == null) {
             fragment = new NewUserFragment();
             manager.beginTransaction().add(R.id.fragmentContainer, fragment)
                     .commit();
-        }*/
+        }
     }
 
     public User getCurrentUser() {
