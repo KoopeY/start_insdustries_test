@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:start_insdustries_test="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_refresh"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_refresh"
+        android:title="@string/action_refresh"
+        start_insdustries_test:showAsAction="always"/>
+    <item
+        android:id="@+id/action_new"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_new"
+        android:title="@string/action_new"
+        start_insdustries_test:showAsAction="always"/>
+</menu>
