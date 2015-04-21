@@ -3,6 +3,7 @@ package com.example.start_insdustries_test;
 import com.parse.ParseClassName;
 import com.parse.ParseFile;
 import com.parse.ParseObject;
+import com.parse.ParseUser;
 
 /**
  * Created by Станислав on 21.04.2015.
@@ -36,6 +37,10 @@ public class User extends ParseObject {
 
     public void setPatronymic(String patronymic) {
         put("patronymic", patronymic);
+    }
+
+    public void setAuthor(ParseUser user) {
+        put("User", user);
     }
 
     public String getPhone() {

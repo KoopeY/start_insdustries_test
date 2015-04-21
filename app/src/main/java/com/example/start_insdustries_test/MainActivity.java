@@ -7,8 +7,6 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.parse.ParseObject;
-
 
 public class MainActivity extends Activity {
 
@@ -16,7 +14,7 @@ public class MainActivity extends Activity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        ParseObject.registerSubclass(User.class);
+
         user = new User();
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
